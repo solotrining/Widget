@@ -1,12 +1,11 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    style="@style/Widget.Widget.AppWidget.Container"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:theme="@style/Theme.Widget.AppWidgetContainer">
 
     <TextView
         android:id="@+id/appwidget_text"
-        style="@style/Widget.Widget.AppWidget.InnerView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
@@ -15,7 +14,15 @@
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:contentDescription="@string/appwidget_text"
-        android:text="@string/appwidget_text"
+        android:text="오늘의 계획"
         android:textSize="24sp"
-        android:textStyle="bold|italic" />
-</RelativeLayout>
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="123dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center_horizontal"
+        android:text="다이어트 하기 진짜루"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+</LinearLayout>
